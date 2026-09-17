@@ -1,0 +1,119 @@
+table assessments
+	lineageTag: fda54f57-831f-4a42-b5d7-339b0f9f9432
+	sourceLineageTag: [dbo].[assessments]
+
+	column assessment_id
+		dataType: string
+		lineageTag: 37e51e0f-06ee-48f1-a9b5-5810ea7d8e0f
+		sourceLineageTag: assessment_id
+		summarizeBy: none
+		sourceColumn: assessment_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column enrolment_id
+		dataType: string
+		lineageTag: 1cd1f535-d6fa-4fd4-bc8d-45fb72983ef8
+		sourceLineageTag: enrolment_id
+		summarizeBy: none
+		sourceColumn: enrolment_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column student_id
+		dataType: string
+		lineageTag: cbea240b-4ce4-478b-84c8-9fd1d9d82674
+		sourceLineageTag: student_id
+		summarizeBy: none
+		sourceColumn: student_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column course_id
+		dataType: string
+		lineageTag: 2f67cea2-d0b6-4f4b-8184-3547169af6c2
+		sourceLineageTag: course_id
+		summarizeBy: none
+		sourceColumn: course_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column department
+		dataType: string
+		lineageTag: 7f4b0709-7163-4b50-8808-ff2bd24d0b86
+		sourceLineageTag: department
+		summarizeBy: none
+		sourceColumn: department
+
+		annotation SummarizationSetBy = Automatic
+
+	column assessment_type
+		dataType: string
+		lineageTag: 0c82daf5-e4e2-4dec-a49e-0509c3a03927
+		sourceLineageTag: assessment_type
+		summarizeBy: none
+		sourceColumn: assessment_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column attempt_number
+		dataType: string
+		lineageTag: e48a7949-8561-4c27-854d-64be682acec4
+		sourceLineageTag: attempt_number
+		summarizeBy: none
+		sourceColumn: attempt_number
+
+		annotation SummarizationSetBy = Automatic
+
+	column submitted_date
+		dataType: string
+		lineageTag: 37ee7256-30ab-4cee-a326-0c3690838498
+		sourceLineageTag: submitted_date
+		summarizeBy: none
+		sourceColumn: submitted_date
+
+		annotation SummarizationSetBy = Automatic
+
+	column score
+		dataType: string
+		lineageTag: e313be37-cda6-479d-ad40-e57fbe403615
+		sourceLineageTag: score
+		summarizeBy: none
+		sourceColumn: score
+
+		annotation SummarizationSetBy = Automatic
+
+	column grade
+		dataType: string
+		lineageTag: 85992e87-2bcf-4842-a683-fd28c919ee51
+		sourceLineageTag: grade
+		summarizeBy: none
+		sourceColumn: grade
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_pass
+		dataType: string
+		lineageTag: fb96b6bc-85fe-4e21-8ae5-db56547566a4
+		sourceLineageTag: is_pass
+		summarizeBy: none
+		sourceColumn: is_pass
+
+		annotation SummarizationSetBy = Automatic
+
+	column word_count
+		dataType: string
+		lineageTag: 1fed88cb-06a8-4187-8339-e08ef760ca24
+		sourceLineageTag: word_count
+		summarizeBy: none
+		sourceColumn: word_count
+
+		annotation SummarizationSetBy = Automatic
+
+	partition assessments = entity
+		mode: directLake
+		source
+			entityName: assessments
+			schemaName: dbo
+			expressionSource: 'DirectLake - lh_edu'
+

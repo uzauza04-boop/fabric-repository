@@ -1,0 +1,74 @@
+table faculty
+	lineageTag: 430f346a-e1ad-43d2-84aa-8604285e6a04
+	sourceLineageTag: [dbo].[faculty]
+
+	column faculty_id
+		dataType: string
+		lineageTag: e9590701-c42d-441b-b101-3d1579093dde
+		sourceLineageTag: faculty_id
+		summarizeBy: none
+		sourceColumn: faculty_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column department
+		dataType: string
+		lineageTag: 8cefeb69-4ab4-4502-aeca-6392fdd2ce19
+		sourceLineageTag: department
+		summarizeBy: none
+		sourceColumn: department
+
+		annotation SummarizationSetBy = Automatic
+
+	column role
+		dataType: string
+		lineageTag: ff561ea3-bf86-45f0-b73e-c2472be12a90
+		sourceLineageTag: role
+		summarizeBy: none
+		sourceColumn: role
+
+		annotation SummarizationSetBy = Automatic
+
+	column years_at_institution
+		dataType: string
+		lineageTag: b0eeb725-114e-461d-bc92-496756e26f60
+		sourceLineageTag: years_at_institution
+		summarizeBy: none
+		sourceColumn: years_at_institution
+
+		annotation SummarizationSetBy = Automatic
+
+	column courses_assigned
+		dataType: string
+		lineageTag: 78de4f44-2884-46fa-b98c-e4f85bbcf2d5
+		sourceLineageTag: courses_assigned
+		summarizeBy: none
+		sourceColumn: courses_assigned
+
+		annotation SummarizationSetBy = Automatic
+
+	column research_active
+		dataType: string
+		lineageTag: b660cd2b-4a5c-45e1-a367-2b93dbfdb338
+		sourceLineageTag: research_active
+		summarizeBy: none
+		sourceColumn: research_active
+
+		annotation SummarizationSetBy = Automatic
+
+	column hire_date
+		dataType: string
+		lineageTag: 0bdd9821-1bf5-49a7-877f-e404f9a02ebd
+		sourceLineageTag: hire_date
+		summarizeBy: none
+		sourceColumn: hire_date
+
+		annotation SummarizationSetBy = Automatic
+
+	partition faculty = entity
+		mode: directLake
+		source
+			entityName: faculty
+			schemaName: dbo
+			expressionSource: 'DirectLake - lh_edu'
+
