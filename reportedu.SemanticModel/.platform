@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "reportedu"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "1245dd0d-5033-9fa3-45cf-fbb3cdb394a6"
+  }
+}
