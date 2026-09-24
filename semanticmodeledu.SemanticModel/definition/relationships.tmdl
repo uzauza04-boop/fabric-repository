@@ -1,8 +1,0 @@
-relationship 558af7c3-af23-8d6b-5f90-16b5371137ac
-	fromColumn: assessments.student_id
-	toColumn: students.student_id
-
-relationship 9a1c3f86-0a40-ded2-10e5-be6758005128
-	fromColumn: enrolments.student_id
-	toColumn: students.student_id
-
